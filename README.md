@@ -1,37 +1,47 @@
-## Welcome to GitHub Pages
+## Hello! Here you can find examples on how to build basic machine learning models
 
-You can use the [editor on GitHub](https://github.com/Claudio9701/classification_models_example/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+You can use this code as a base for starting your own machine learning projects!
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Introduction
 
-### Markdown
+Python is a easy to learn programming language that is perfect for starters. If you come from a academic background and have use Matlab before the python sintax will look very familiar to you. On the other hand, if its your first time programming in any language there are some little things that will easy your learning curve and I'm going to do my best effort to summary them in this webpage.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Python have libraries. What are them?
 
-```markdown
-Syntax highlighted code block
+TLDR: A library is useful code some cool genius programmers to help other people do common (or not so common) tasks in a easy way.
 
-# Header 1
-## Header 2
-### Header 3
+The classical libraries used in machine learning projects are:
 
-- Bulleted
-- List
+Pandas for data handling (wrangling and cleaning)
+Numpy or Scipy for scientific computing (math like linear algebra, optimization and other important operations)
+Scikit-learn (sklearn) for ready to train machine learning models
+Matplotlib for plotting your data or results
 
-1. Numbered
-2. List
+#### And how do i can use them?
 
-**Bold** and _Italic_ and `Code` text
+you just have to "import" them as follows.
 
-[Link](url) and ![Image](src)
+```python
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+This common libraries have standard aliases that you could use in your code to reduce it while other people would still be able to understand which libbraries you are using.
 
-### Jekyll Themes
+But what about sklearn? The models in this library are accesible by importing them as classes to do this you use the from statement as seen here.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Claudio9701/classification_models_example/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+```python
+from sklearn.linear_model import LogisticRegression
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
+```
+
+
+### The rest is your work!! go checkout the [code example](https://github.com/Claudio9701/classification_models_example/blob/master/classification_models.ipynb).
+
+Contributions are well received, you could comment the code better or maybe maje some useful functions for machine learning.
+Don't hesitate to use the [Issues section](https://github.com/Claudio9701/classification_models_example/issues) if you have doubts or complications.
